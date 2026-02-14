@@ -23,7 +23,7 @@ function App() {
         <CtaButton text="Increase me" onClick={() => setCount((count) => count + 1)} />
         <CtaButton text="Decrease me" onClick={() => setCount((count) => count - 1)} />
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/App.tsx</code> and save to test HMR (Hot Module Replacement)
         </p>
       </div>
       <p className="read-the-docs">
