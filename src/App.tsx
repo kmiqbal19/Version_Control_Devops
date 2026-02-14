@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import CtaButton from './components/CtaButton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,9 +19,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <p>Count is {count}</p>
+        <CtaButton text="Increase me" onClick={() => setCount((count) => count + 1)} />
+        <CtaButton text="Decrease me" onClick={() => setCount((count) => count - 1)} />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
