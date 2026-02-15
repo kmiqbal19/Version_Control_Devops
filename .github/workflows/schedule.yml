@@ -1,0 +1,10 @@
+name: Schedule workflow
+on:
+  schedule:
+    - cron: "20 35 * * *"
+jobs:
+  demo2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: schedule game
+      run: echo "hey dost , schedule workflow is done"
