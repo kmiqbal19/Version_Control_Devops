@@ -1,9 +1,9 @@
 name: Schedule workflow
 on:
   schedule:
-    - cron: "39 20 * * *"
+    - cron: "12 21 * * *"
 jobs:
-  demo2:
+  schedule-job:
     runs-on: ubuntu-latest
     steps:
       - name: schedule game
